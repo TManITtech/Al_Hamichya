@@ -10,7 +10,7 @@ html, body {
 	overflow:inherit;
 }
 body{
-	background-image: url(./img/westernwall_sky.jpg);
+	background-image: url(/img/westernwall_sky.jpg);
 	background-size: cover;
 	background-color:#E5EFFF;
 	font-size:1em;
@@ -122,12 +122,12 @@ img{
 	margin:0;
 }
 .footer .candles{
-	background-image:url('/images/candles-tr.png');
+	background-image:url('/img/candles-tr.png');
 	background-repeat:no-repeat;
 	background-position:3em 0;
 }
 .footer .candles2{
-	background-image:url('/images/candles-tr.png');
+	background-image:url('/img/candles-tr.png');
 	background-repeat:no-repeat;
 	background-position:18em 0;
 	padding-top:.4em;
@@ -160,7 +160,7 @@ img{
 	border-top-color: #D2B48C;
 	border-top-style: solid;
 	border-top-width: .07em;
-	background-image:url(/images/that.gif);
+	background-image:url(/img/that.gif);
 	margin:0;
 	height:5.24em;
 }
@@ -331,7 +331,7 @@ img{
 	border-width:1px;
 	margin-left:5px;
 	margin-bottom:4px;
-	background-image: url(/images/listArrow.png);
+	background-image: url(/img/listArrow.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	color:black;
