@@ -10,7 +10,7 @@ html, body {
 	overflow:inherit;
 }
 body{
-	background-image: url(/img/westernwall_sky.jpg);
+	background-image: url(../img/westernwall_sky.jpg);
 	background-size: cover;
 	background-color:#E5EFFF;
 	font-size:1em;
