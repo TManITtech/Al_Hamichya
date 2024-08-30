@@ -29,14 +29,15 @@ form{margin:0;padding:0;}
 	border-right-style:solid;
 	border-right-color:black;
 	border-right-width:.07em;
-	background-color:white;
-	text-align:left;
+	text-align: right;
 }
 * html .cdiv { 
 	height: 100%;
 }
 .cdivs{
 	padding-bottom:5.35em;
+	background-color: black;
+    color: rgb(230, 230, 230);
 }
 .narrow{
 	padding-left:0.63em;
@@ -272,6 +273,7 @@ img{
 	font-size: 1em;
 	line-height: 1.8em;
 	width:90%;
+	text-align: center;
 }
 .barticle{
 	margin:0 auto;
@@ -279,6 +281,17 @@ img{
 .barticle div {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
+
+.type-option {
+	max-width: fit-content;
+    max-height: 50px;
+    padding: 0px 100px;
+    direction: rtl;
+    text-align: justify;
+    float: right;
+	color: rgb(51, 51, 51);
+}
+
 .instr{
 	margin-bottom:0;
 	margin-top:0;
