@@ -288,8 +288,7 @@ img{
     font-weight: 550;
     padding: 0px 100px;
     direction: rtl;
-    text-align: justify;
-    float: right;
+    text-align: justify;     
     color: rgb(51, 51, 51);
 }
 
