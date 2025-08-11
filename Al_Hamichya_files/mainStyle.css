@@ -10,9 +10,7 @@ html, body {
 	overflow:inherit;
 }
 body{
-	background-image: url(./westernwall_sky.jpg);
 	background-size: cover;
-	background-color:#E5EFFF;
 	font-size:1em;
 }
 div{
@@ -36,13 +34,60 @@ form{margin:0;padding:0;}
 }
 .cdivs{
 	padding-bottom:5.35em;
-	background-color: black;
-    color: rgb(230, 230, 230);
 }
 .narrow{
 	padding-left:0.63em;
 	padding-right:0.63em;
 	padding-top:0.31em;
+}
+
+.light-theme {
+	background-image: url(./westernwall_sky.jpg);
+	background-color:#E5EFFF;
+}
+
+.dark-theme {
+    background-image: none;
+    background-color: #111;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.dark-theme #theme-toggle {
+    background-color: #333;
+    color: white;
+}
+
+.light-theme #theme-toggle {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.light-theme .cdivs {
+    background-color: white;
+    color: black;
+}
+
+.dark-theme .cdivs {
+    background-color: black;
+    color: rgb(230, 230, 230);
+}
+
+.dark-theme .title {
+    color: rgb(230, 230, 230);
 }
 
 .nomg{
@@ -288,8 +333,7 @@ img{
     font-weight: 550;
     padding: 0px 100px;
     direction: rtl;
-    text-align: justify;     
-    color: rgb(51, 51, 51);
+    text-align: justify;
 }
 
 .instr {
