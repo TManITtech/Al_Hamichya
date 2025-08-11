@@ -55,10 +55,25 @@ form{margin:0;padding:0;}
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px solid gray;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    border: 1px solid gray;
     cursor: pointer;
+}
+
+.dark-theme #theme-toggle {
+    background-color: #333;
+    color: white;
+}
+
+.light-theme #theme-toggle {
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 .light-theme .cdivs {

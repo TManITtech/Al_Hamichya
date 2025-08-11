@@ -76,7 +76,7 @@
                <div class="">
 			   
 				  <div id="actionBox" class="actionBox">
-					  <button id="theme-toggle">Toggle Theme</button>
+					  <button id="theme-toggle"></button>
 					  <h1 class="title">ברכת מעין שלש</h1>
 
 					  <img class="toggleImg" id="Mezonos" alt="Mezonos" src="./Al_Hamichya_files/cookie.jpg" />                  
@@ -245,23 +245,31 @@
             const themeToggle = $('#theme-toggle');
             const body = $('body');
 
+            function updateButtonIcon() {
+                if (body.hasClass('dark-theme')) {
+                    themeToggle.text('☀️');
+                } else {
+                    themeToggle.text('🌙');
+                }
+            }
+
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 body.addClass(savedTheme);
             } else {
                 body.addClass('dark-theme');
             }
+            updateButtonIcon();
 
             themeToggle.click(function() {
+                body.toggleClass('dark-theme light-theme');
+
                 if (body.hasClass('dark-theme')) {
-                    body.removeClass('dark-theme');
-                    body.addClass('light-theme');
-                    localStorage.setItem('theme', 'light-theme');
-                } else {
-                    body.removeClass('light-theme');
-                    body.addClass('dark-theme');
                     localStorage.setItem('theme', 'dark-theme');
+                } else {
+                    localStorage.setItem('theme', 'light-theme');
                 }
+                updateButtonIcon();
             });
         });
       </script>
