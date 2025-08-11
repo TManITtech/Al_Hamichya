@@ -76,6 +76,7 @@
                <div class="">
 			   
 				  <div id="actionBox" class="actionBox">
+					  <button id="theme-toggle">Toggle Theme</button>
 					  <h1 class="title">ברכת מעין שלש</h1>
 
 					  <img class="toggleImg" id="Mezonos" alt="Mezonos" src="./Al_Hamichya_files/cookie.jpg" />                  
@@ -239,6 +240,30 @@
                collapsible: true
             });
          });
+
+        $(function() {
+            const themeToggle = $('#theme-toggle');
+            const body = $('body');
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                body.addClass(savedTheme);
+            } else {
+                body.addClass('dark-theme');
+            }
+
+            themeToggle.click(function() {
+                if (body.hasClass('dark-theme')) {
+                    body.removeClass('dark-theme');
+                    body.addClass('light-theme');
+                    localStorage.setItem('theme', 'light-theme');
+                } else {
+                    body.removeClass('light-theme');
+                    body.addClass('dark-theme');
+                    localStorage.setItem('theme', 'dark-theme');
+                }
+            });
+        });
       </script>
    </body>
 </html>
