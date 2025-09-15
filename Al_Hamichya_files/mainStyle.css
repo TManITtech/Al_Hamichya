@@ -336,6 +336,10 @@ img{
     text-align: justify;
 }
 
+.dark-theme .type-option {
+    color: black;
+}
+
 .instr {
 	margin-bottom:0;
 	margin-top:0;
