@@ -428,3 +428,26 @@ img{
 	padding-right: 10px;
 	margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+	html {
+		font-size: 112%;
+	}
+
+	.title {
+		font-size: 2.3em;
+	}
+
+	.type-option {
+		font-size: 1.15em;
+	}
+
+	.hpar {
+		font-size: 1.9em;
+		line-height: 1.85em;
+	}
+
+	.instr {
+		font-size: 1.05em;
+	}
+}
