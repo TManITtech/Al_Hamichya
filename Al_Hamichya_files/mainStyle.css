@@ -417,6 +417,7 @@ img{
 #categories{
 	padding-top:7px;
 }
+
 #categories a{
 	display:block;
 	float:left;
@@ -429,7 +430,7 @@ img{
 	margin-right: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
 	html {
 		font-size: 112%;
 	}
@@ -443,8 +444,14 @@ img{
 	}
 
 	.hpar {
-		font-size: 1.9em;
-		line-height: 1.85em;
+		font-size: 3.5em;
+		line-height: 1.5em;
+		text-align: center;
+		margin-top: 25px;
+	}
+
+	.accordion-hpar {
+		margin-top: -25px;
 	}
 
 	.instr {
