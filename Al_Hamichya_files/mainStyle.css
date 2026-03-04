@@ -432,11 +432,11 @@ img{
 
 @media (max-width: 750px) {
 	html {
-		font-size: 112%;
+		font-size: 115%;
 	}
 
 	.title {
-		font-size: 2.3em;
+		font-size: 2em;
 	}
 
 	.type-option {
@@ -444,7 +444,7 @@ img{
 	}
 
 	.hpar {
-		font-size: 3.5em;
+		font-size: 2em;
 		line-height: 1.5em;
 		text-align: center;
 		margin-top: 25px;
@@ -458,3 +458,4 @@ img{
 		font-size: 1.05em;
 	}
 }
+
