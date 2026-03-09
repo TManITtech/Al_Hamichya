@@ -1,5 +1,36 @@
 a {color:blue}
 
+/* Skip navigation link (hidden until focused) */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 9999;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    transition: top 0.2s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Screen-reader-only utility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 html{
 	font-size:100%;
 }
@@ -238,6 +269,16 @@ img{
 	cursor: pointer;
 }
 
+.toggleImg:focus-visible {
+	outline: 3px solid #005fcc;
+	outline-offset: 3px;
+}
+
+#theme-toggle:focus-visible {
+	outline: 3px solid #005fcc;
+	outline-offset: 2px;
+}
+
 #searcher .box{
 	background-color:#FFDC8A;
 }
@@ -428,6 +469,18 @@ img{
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-right: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+	.skip-link {
+		transition: none;
+	}
 }
 
 @media (max-width: 750px) {
